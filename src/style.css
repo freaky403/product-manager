@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: clamp(.75rem, 2.25vmin, 1.6rem);
+}
+
+.swal2-popup {
+    font-size: clamp(.75rem, 2.25vmin, 1.6rem);
+}
+
+.btn-primary {
+    @apply min-w-[7rem] p-4 bg-emerald-500 text-white rounded-md shadow-md hover:bg-emerald-600;
+}
+
+.btn-destroy {
+    @apply min-w-[7rem] p-4 bg-red-500 text-white rounded-md shadow-md hover:bg-red-600;
+}
+
+.product-item {
+    @apply odd:bg-tertiary even:bg-secondary;
+}

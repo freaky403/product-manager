@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Manager</title>
+</head>
+<body>
+<div id="app" class="w-full min-h-screen">
+    <header class="w-full h-[7rem] bg-primary px-[2rem] flex justify-center items-center">
+        <nav class="w-[40rem]">
+            <ul class="flex justify-between items-center space-x-[2rem]">
+                <li class="p-4 text-gray-900 font-medium">
+                    <a href="/">Products</a>
+                </li>
+                <li class="p-4 text-gray-900 font-medium">
+                    <a href="#">Categories</a>
+                </li>
+                <li class="p-4 text-gray-900 font-medium">
+                    <a href="#">Manufactures</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mx-[2rem] px-4 mt-[2rem] flex flex-col justify-center items-center">
+        <div class="flex items-center space-x-[3rem]">
+            <h1 class="text-[2.2rem] font-medium">Products List</h1>
+            <button class="btn-primary">
+                <a href="create-product.html">Create new product</a>
+            </button>
+        </div>
+        <table class="product-list table-auto w-full mt-[2rem] border-collapse">
+            <thead class="product-list__head">
+            <tr class="h-[6rem] bg-primary rounded-xl">
+                <th class="p-3 font-medium text-slate-900">ID</th>
+                <th class="p-3 font-medium text-slate-900">Name</th>
+                <th class="p-3 font-medium text-slate-900">Description</th>
+                <th class="p-3 font-medium text-slate-900">Stock</th>
+                <th class="p-3 font-medium text-slate-900">Price</th>
+                <th class="p-3 font-medium text-slate-900">Action</th>
+            </tr>
+            </thead>
+            <tbody class="student-list__body">
+            <!-- Product will be rendered here -->
+            </tbody>
+        </table>
+    </main>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
